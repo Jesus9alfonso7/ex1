@@ -1,0 +1,138 @@
+header {
+  display: flex;
+  flex-direction: row;justify-content: space-evenly;
+  
+
+
+
+}
+
+
+h2 {
+  float: left;
+  display: flex;
+  flex-flow: left;
+  border: 1px solid black;
+  padding-left: auto;
+  padding-right: auto;
+  
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+
+  }
+
+  li {
+    list-style-type: none;
+    border: 1px solid black;
+  padding-left: auto;
+  padding-right: auto;
+
+
+  }
+
+  .content{
+    display: flow-root;
+ 
+  border: 1px solid black;
+  padding-left: auto;
+  padding-right: auto;
+  
+  align-items:center;
+  margin-top: auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5px;
+  
+  
+
+}
+
+  .aside {
+    float: left;
+  
+
+  border: 1px solid black;
+  margin-top: auto;
+
+  
+
+
+  }
+
+  .slidebox{
+    margin-top: auto;
+
+  border: 1px solid black;
+  padding-left: 100px;
+  padding-right: 100px;
+  
+
+
+   
+  }
+
+  .article{
+     margin-top: auto;
+    
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+  }
+
+
+.poem{
+
+border: 1px solid black;
+}
+
+
+/*Device = Tablets, Ipads (portrait)
+  Screen = B/w 600px to 990px*/
+  @media (min-width:600px) and (max-width: 990px)  {
+    .article {
+
+  } 
+header{
+  display: none;
+
+}
+h2 {
+  display: none;
+  
+}
+}
+
+/*  Small devices    */
+@media (max-width:599px) {
+
+header,.content{
+   display: none;
+  
+
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-betwen;
+
+
+
+  }
+
+
+.nav > li {
+  margin : 10px;
+  text-align: center;
+
+}
+
+
+}

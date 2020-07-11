@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type ="text/css" href="style.css">
+
+
+<script>
+
+let nombres  = ['Jorge','Isabel','Juan','Pedro','Karina','Jose','Arturo','Rogelio','Bertha'];
+
+
+function challenge1(e){
+var botonesNumero = prompt("cuantos botones necesita");
+for (var j = 0; j <botonesNumero; j++) {
+var targetDiv = document.getElementById("dummy");
+var newDiv = document.createElement("button");
+
+newDiv.textContent = nombres[j];
+targetDiv.appendChild(newDiv);
+
+}
+
+}
+
+function challenge2(e){
+
+
+var arrayLen = nombres.length;
+for (var j = 0; j <arrayLen; j++) {
+  
+  console.log(nombres[j].toUpperCase());
+  
+
+  
+}
+
+
+}
+class dog {
+ constructor(Nombre, Color,Raza){
+ this.Nombre = Nombre;
+ this.Color = Color;
+ this.Raza = Raza;
+ }
+}
+var fido = new dog("Fido","Cafe","Poodle")
+var fido2 = new Dog("Fido2","Cafe2","Poodle2")
+var fido3 = new Dog("Fido3","Cafe3","Poodle3")
+/*
+
+Crea una funcion llamada: challenge1  que realice lo siguiente: 
+
+1) Pregunta el usuario cuantos botones necesita. 
+
+
+2) Por medio de un FOR  realizar los siguiente:
+
+    i) En base el resultado de la pregunta 1) iterar el arreglo de nombres.
+    ii) Obtener una referencia al id: dummy 
+    iii) crear un elemento Button utilizando el método (CreateElement)
+    iv) Asignarle el nombre correspondinete al arreglo en esa iteración
+    v) Agregar el elmento como hijo del div "dummy". 
+*/
+
+// CREA TU FUNCION challenge1 aqui:
+
+
+
+/*
+Crea una funcion llamada: challenge2 que utilizando un FOR convierta todos los nombres a mayusula y los escriba en la consola
+*/
+
+// CREA TU FUNCION challenge2 2 aquí.
+
+
+
+/*
+
+A) Define un objeto tipo "Dog" que reciba 3 parametros
+
+1) Nombre
+2) Color
+3) Raza
+
+
+B) Crea 3 objectos siguiendo esa clase con diferentes valores
+
+eJ   var fido = new Dog("Fido","Cafe","Poodle")
+
+
+*****BONUS**** 10  puntos
+
+Crea una método llamado printInfo()  que escriba en consola todas las propiedades del objeto que lo invoca. 
+
+EJ
+
+fido.printInfo();
+
+Deberia escribir en consola
+
+"Nombre: Fido , De color: Cafe , Raza: Poodle"
+
+
+*/
+
+// CREA TU FUNCION printInfo() AQUI
+
+
+
+
+</script>
+
+</head>
+
+<body>
+
+    <button onclick="challenge1()">Challenge 1</button>
+    <button onclick="challenge2()">Challenge 2</button>
+    <button onclick="challenge3()">Challenge 2</button>
+
+  
+<div id = "dummy">
+
+</div>
+ 
+
+
+</body>
+
+</html>
